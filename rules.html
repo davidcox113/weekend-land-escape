@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rules · Weekend Land Escape</title>
+<meta name="description" content="How to play Weekend Land Escape: card types, turn structure, combat, fortifications, gold economy, keywords and worked examples.">
+<meta name="theme-color" content="#131315">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<!-- OpenGraph / social. og:image is relative so the site works under any subpath;
+     after deploying, you may replace it with the absolute URL (see README). -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Weekend Land Escape">
+<meta property="og:title" content="Rules · Weekend Land Escape">
+<meta property="og:description" content="How to play Weekend Land Escape: card types, turn structure, combat, fortifications, gold economy, keywords and worked examples.">
+<meta property="og:image" content="https://davidcox113.github.io/weekend-land-escape/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Weekend Land Escape cover art — Hold the Line">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rules · Weekend Land Escape">
+<meta name="twitter:description" content="How to play Weekend Land Escape: card types, turn structure, combat, fortifications, gold economy, keywords and worked examples.">
+<meta name="twitter:image" content="https://davidcox113.github.io/weekend-land-escape/assets/img/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Cinzel:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/img/crest-96.png" width="44" height="44" alt="Weekend Land Escape crest"><span>Weekend Land Escape</span></a>
+    <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menu">&#9776;</button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cards.html">Cards</a></li>
+        <li><a href="rules.html" aria-current="page">Rules</a></li>
+        <li><a href="print.html">Print &amp; Play</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<div class="wrap">
+  <header class="page-head">
+    <p class="eyebrow">Instruction manual</p>
+    <h1>How to Play</h1>
+    <hr class="divider">
+    <p class="lead">Everything you need to play Weekend Land Escape Wave 1: card types, the turn, combat, fortifications and the gold economy.</p>
+    <p class="notice"><strong>Draft / playtest rules.</strong> Expect wording, costs and timing to shift as Wave 1 locks. Exact reminder text on a card always wins if wording differs.</p>
+  </header>
+  <div class="rules-layout">
+    <nav class="toc" aria-label="Rules contents"><h2>Contents</h2><ol>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#mana">Mana Marks</a></li>
+<li><a href="#card-types">Card Types</a></li>
+<li><a href="#zones">Zones</a></li>
+<li><a href="#deck">Deck Construction</a></li>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#turn">Turn Structure</a></li>
+<li><a href="#combat">Combat &amp; Fortifications</a></li>
+<li><a href="#gold">Gold Economy</a></li>
+<li><a href="#keywords">Keywords</a></li>
+<li><a href="#card-format">Card Format</a></li>
+<li><a href="#example">Worked Example Turn</a></li>
+<li><a href="#dragons">Dragon Wave 1</a></li>
+    </ol></nav>
+    <article class="rules">
+
+<section id="overview">
+<h2><span class="num">1.</span>Overview</h2>
+<p><strong>Weekend Land Escape</strong> is a fantasy kingdom trading card game for <strong>2 players</strong>. Each player represents a warband fighting to hold territory, raise gold, raise walls and cut the enemy down. The baseline is a classic two-player trading card game, with Weekend Land Escape’s own gold economy, fortifications, equipment upkeep and Supply pressure.</p>
+<div class="callout"><span class="label">Goal</span>Reduce your opponent to <strong>0 life</strong>. Both players begin at <strong>20 life</strong>. The first player to drop an opponent to 0 (or less) wins.</div>
+<p><strong>No dice required.</strong> Track life, gold, damage and counters with Treasure tokens, spare counters, a scoresheet or a phone. Combat math is power vs. toughness — no random rolls.</p>
+<h3>Multiplayer (optional)</h3>
+<p>In free-for-all, each player still starts at 20 life; the last player above 0 wins. Attacks target one opponent or their creatures as usual, and the shared Treasure pile sits in the middle. For two-headed / team play, a shared life total of 30 and a shared gold pool per team is a solid playtest default.</p>
+</section>
+
+<section id="mana">
+<h2><span class="num">2.</span>Mana Marks</h2>
+<p>Mana is produced by Lands and mana-producing Artifacts, and spent to cast spells and activate abilities. Weekend Land Escape uses six custom mana marks, locked for Wave 1:</p>
+<table class="mana-table"><tbody>
+<tr><td><img src="assets/img/mana/bastion.webp" alt="Bastion mana mark" width="44" height="44" loading="lazy"></td><td><strong>Bastion</strong> <span class="muted">(white / order)</span></td><td>Defense, discipline, healing and righteous steel.</td></tr>
+<tr><td><img src="assets/img/mana/harbor.webp" alt="Harbor mana mark" width="44" height="44" loading="lazy"></td><td><strong>Harbor</strong> <span class="muted">(blue / tempo)</span></td><td>Draw, dig, bounce and battlefield timing.</td></tr>
+<tr><td><img src="assets/img/mana/mire.webp" alt="Mire mana mark" width="44" height="44" loading="lazy"></td><td><strong>Mire</strong> <span class="muted">(black / removal)</span></td><td>Attrition, taxes and hard answers.</td></tr>
+<tr><td><img src="assets/img/mana/forge.webp" alt="Forge mana mark" width="44" height="44" loading="lazy"></td><td><strong>Forge</strong> <span class="muted">(red / aggression)</span></td><td>Rush, pressure and warbands.</td></tr>
+<tr><td><img src="assets/img/mana/wildwood.webp" alt="Wildwood mana mark" width="44" height="44" loading="lazy"></td><td><strong>Wildwood</strong> <span class="muted">(green / ramp)</span></td><td>Growth, mana acceleration and big threats.</td></tr>
+<tr><td><img src="assets/img/mana/quarry.webp" alt="Quarry mana mark" width="44" height="44" loading="lazy"></td><td><strong>Quarry</strong> <span class="muted">(colorless / structures)</span></td><td>Artifacts, mana rocks, forts and walls.</td></tr>
+</tbody></table>
+<figure class="card" style="max-width:640px"><button class="card-btn" type="button" data-full="assets/img/mana-sheet.webp" data-name="Mana Marks reference sheet" data-text="The six Wave 1 mana marks." aria-label="View mana marks reference sheet"><img src="assets/img/mana-sheet.webp" alt="Mana Marks reference sheet showing Bastion, Harbor, Mire, Forge, Wildwood and Quarry" width="1280" height="720" loading="lazy"></button><figcaption><span class="card-text">Official Wave 1 mana marks reference sheet.</span></figcaption></figure>
+</section>
+
+<section id="card-types">
+<h2><span class="num">3.</span>Card Types</h2>
+<p>Every permanent and spell belongs to one or more types. Wave 1 ships creatures (including dragon mythics), lands, fortifications, economy buildings, equipment, mana rocks and Treasure tokens. Instants and sorceries are designed into the rules but are not in the Wave 1 card set yet.</p>
+<h3>Lands (Basics + Hybrids)</h3>
+<div class="type-row"><div><p>Lands produce mana. You may play <strong>one land per turn</strong> during a main phase (unless a card says otherwise). Basic lands tap for one mana of their mark. Hybrid lands tap for either listed mark — <strong>Crossroads Quarry</strong> is the special any-color/Quarry rare and enters tapped.</p></div><figure class="card">
+  <button class="card-btn" type="button" data-full="assets/img/cards/bastion-fields.webp" data-name="Bastion Fields" data-text="Basic Land — Bastion (white / order)." aria-label="View full card: Bastion Fields">
+    <img src="assets/img/thumbs/bastion-fields.webp" alt="Bastion Fields" width="560" height="315" loading="lazy" decoding="async">
+  </button>
+  <figcaption><span class="card-name">Bastion Fields</span><span class="card-text">Basic Land — Bastion (white / order).</span></figcaption>
+</figure></div>
+<h3>Creatures</h3>
+<div class="type-row"><div><p>Creatures have <strong>power / toughness</strong>. Power is the damage they deal in combat; toughness is their hit points. Creatures enter tapped only if a card says so; most cannot attack the turn they enter unless they have <strong>Aggressive</strong> (or a similar exemption). Dragon mythics are high-cost apex creatures — see <a href="#dragons">Dragon Wave 1</a>.</p></div><figure class="card">
+  <button class="card-btn" type="button" data-full="assets/img/cards/warpaint-marauder.webp" data-name="Warpaint Marauder" data-text="1 Forge, 2/1. Ferocity: +1 power when attacking." aria-label="View full card: Warpaint Marauder">
+    <img src="assets/img/thumbs/warpaint-marauder.webp" alt="Warpaint Marauder" width="560" height="315" loading="lazy" decoding="async">
+  </button>
+  <figcaption><span class="card-name">Warpaint Marauder</span><span class="card-text">1 Forge, 2/1. Ferocity: +1 power when attacking.</span></figcaption>
+</figure></div>
+<h3>Instants &amp; Sorceries (planned)</h3>
+<p>Instants can be cast any time you have priority — including during combat and on an opponent’s turn. Sorceries are cast only during your main phase when nothing else is waiting to resolve. <em>Wave 1 does not include Instants or Sorceries yet; they are planned for later waves.</em></p>
+<h3>Artifacts</h3>
+<div class="type-row"><div><p>Wave 1 artifacts are primarily <strong>mana rocks</strong> (tap for colored or Quarry mana) and <strong>Equipment</strong> (see below). Artifacts are usually colorless to cast unless their cost lists a colored mark. Relics such as <strong>Dualheart Vessel</strong> support dragon synergies.</p></div><figure class="card">
+  <button class="card-btn" type="button" data-full="assets/img/cards/forge-heart.webp" data-name="Forge Heart" data-text="2 Forge → 1 Forge." aria-label="View full card: Forge Heart">
+    <img src="assets/img/thumbs/forge-heart.webp" alt="Forge Heart" width="560" height="315" loading="lazy" decoding="async">
+  </button>
+  <figcaption><span class="card-name">Forge Heart</span><span class="card-text">2 Forge → 1 Forge.</span></figcaption>
+</figure></div>
+<h3>Fortifications</h3>
+<div class="type-row"><div><p>Structures use <strong>DEFENSE</strong> instead of power/toughness. When a fortification has taken damage equal to its DEFENSE, it is destroyed. Forts protect troops and economic buildings — walls reduce incoming pressure, towers shoot attackers, gates soak hits meant for markets. <strong>Siege</strong> creatures are especially good at punching through forts.</p></div><figure class="card">
+  <button class="card-btn" type="button" data-full="assets/img/cards/earthen-berm.webp" data-name="Earthen Berm" data-text="1 Quarry, DEF 3. +0/+1 to creatures; protects gold from Instant taxes." aria-label="View full card: Earthen Berm">
+    <img src="assets/img/thumbs/earthen-berm.webp" alt="Earthen Berm" width="560" height="315" loading="lazy" decoding="async">
+  </button>
+  <figcaption><span class="card-name">Earthen Berm</span><span class="card-text">1 Quarry, DEF 3. +0/+1 to creatures; protects gold from Instant taxes.</span></figcaption>
+</figure></div>
+<h3>Economy Fortifications</h3>
+<div class="type-row"><div><p>A subset of forts that produce <strong>Income</strong> (gold) during your upkeep. Richer buildings often have <strong>UPKEEP</strong> gold costs. Miss an upkeep and you typically forfeit that building’s income for the turn (see individual cards). No per-soldier wages — the economy is building-driven.</p></div><figure class="card">
+  <button class="card-btn" type="button" data-full="assets/img/cards/camp-market.webp" data-name="Camp Market" data-text="1 Bastion. Income +1, Upkeep 0, DEF 2." aria-label="View full card: Camp Market">
+    <img src="assets/img/thumbs/camp-market.webp" alt="Camp Market" width="560" height="315" loading="lazy" decoding="async">
+  </button>
+  <figcaption><span class="card-name">Camp Market</span><span class="card-text">1 Bastion. Income +1, Upkeep 0, DEF 2.</span></figcaption>
+</figure></div>
+<h3>Equipment</h3>
+<div class="type-row"><div><p>Pay the cast cost to put Equipment onto the battlefield unattached. Pay its <strong>Equip</strong> cost (often gold) to attach it to a creature you control. Some heavy pieces also demand Equipment <strong>UPKEEP</strong> each turn — pay it or unequip.</p></div><figure class="card">
+  <button class="card-btn" type="button" data-full="assets/img/cards/militia-spear.webp" data-name="Militia Spear" data-text="1 Forge or 1 Gold; Equip 1 Gold → +1/+0." aria-label="View full card: Militia Spear">
+    <img src="assets/img/thumbs/militia-spear.webp" alt="Militia Spear" width="560" height="315" loading="lazy" decoding="async">
+  </button>
+  <figcaption><span class="card-name">Militia Spear</span><span class="card-text">1 Forge or 1 Gold; Equip 1 Gold → +1/+0.</span></figcaption>
+</figure></div>
+<h3>Treasure Tokens</h3>
+<div class="type-row"><div><p>Each Treasure represents <strong>+1 gold</strong>. They are shared table components, not deck cards. When you spend gold, return that many Treasures to the shared pile.</p></div><figure class="card">
+  <button class="card-btn" type="button" data-full="assets/img/cards/treasure-token-card-size.webp" data-name="Treasure Token — Card Size" data-text="Recommended Wave 1 format. +1 Gold." aria-label="View full card: Treasure Token — Card Size">
+    <img src="assets/img/thumbs/treasure-token-card-size.webp" alt="Treasure Token — Card Size" width="560" height="315" loading="lazy" decoding="async">
+  </button>
+  <figcaption><span class="card-name">Treasure Token — Card Size</span><span class="card-text">Recommended Wave 1 format. +1 Gold.</span></figcaption>
+</figure></div>
+</section>
+
+<section id="zones">
+<h2><span class="num">4.</span>Zones</h2>
+<ul>
+<li><strong>Library</strong> — your shuffled deck, face down.</li>
+<li><strong>Hand</strong> — private cards you can cast or play (lands).</li>
+<li><strong>Battlefield</strong> — lands, creatures, forts, artifacts and equipment in play.</li>
+<li><strong>Graveyard</strong> — discarded, destroyed and resolved spells (face up).</li>
+<li><strong>Exile</strong> — removed from the game; only returns if a card says so.</li>
+<li><strong>Gold pile / Treasure pool</strong> — shared components beside the board. Your personal gold is the Treasures in front of you.</li>
+</ul>
+</section>
+
+<section id="deck">
+<h2><span class="num">5.</span>Deck Construction</h2>
+<p>Wave 1 playtest default (draft suggestion):</p>
+<ul>
+<li><strong>40–60 cards.</strong> For a 40-card deck, aim for about <strong>24 lands</strong> (scale proportionally for 60).</li>
+<li>Maximum <strong>4 copies</strong> of any non-basic card. <strong>Basic lands are unlimited.</strong></li>
+<li>Gold/Treasure tokens are <strong>not</strong> deck cards — keep a shared pile of 20–40 tokens for the table.</li>
+</ul>
+<p>Color discipline matters. Two-mark decks are the sweet spot for early playtests; splash a third only if your hybrid lands and mana rocks support it. Dragon mythics are late-game finishers — build ramp, gold engines and tutors (e.g. Harbinger Whisker) before slamming a Colossus.</p>
+</section>
+
+<section id="setup">
+<h2><span class="num">6.</span>Setup</h2>
+<ol class="steps">
+<li>Shuffle your library.</li>
+<li>Draw <strong>7</strong> cards.</li>
+<li>Optional <strong>mulligan</strong>: shuffle your hand back and draw <strong>6</strong> (one free mulligan to 6 is the Wave 1 default; further mulligans are your playgroup’s choice).</li>
+<li>Set life to <strong>20</strong>.</li>
+<li>Set gold to <strong>0</strong> (no Treasures in front of you).</li>
+<li>Place the shared Treasure pile beside the board.</li>
+<li>Determine the first player randomly; that player skips the first draw step (recommended playtest rule).</li>
+</ol>
+</section>
+
+<section id="turn">
+<h2><span class="num">7.</span>Turn Structure</h2>
+<p>Each turn proceeds through these steps in order. For Wave 1 creature and fort play, resolve actions in turn order unless a card says otherwise (a fuller priority system arrives with Instants).</p>
+<ol class="steps">
+<li><strong>Untap.</strong> Untap all permanents you control.</li>
+<li><strong>Upkeep.</strong> In this order (recommended):
+  <ul>
+  <li><strong>Collect Income</strong> from each Economy fortification you control (take that many Treasures from the pile).</li>
+  <li><strong>Pay building UPKEEP</strong> for each Economy fort that demands it. If you cannot (or choose not to), follow the card — typically you get no income from that building this turn, or it becomes inactive.</li>
+  <li><strong>Pay Equipment UPKEEP</strong> for equipped pieces that list one. If unpaid, unequip (the Equipment stays on the battlefield unattached).</li>
+  <li><strong>Optional Supply check:</strong> if you control <strong>5 or more creatures</strong>, you may pay <strong>1 gold</strong>. If you don’t, all your creatures get <strong>−1/−0</strong> until your next turn. There are <strong>no per-soldier wages</strong> — Supply is the only army-size tax.</li>
+  </ul></li>
+<li><strong>Draw.</strong> Draw one card (except the first player on turn one).</li>
+<li><strong>Main Phase 1.</strong> Play a land (once per turn). Cast creatures, artifacts, fortifications and (later) sorceries. Equip creatures. Activate abilities.</li>
+<li><strong>Combat.</strong> Declare attackers → declare blockers → damage. Fortification abilities may trigger or activate here (towers shoot, walls reduce damage, berms buff toughness).</li>
+<li><strong>Main Phase 2.</strong> Same options as Main Phase 1 (still only one land per turn in total).</li>
+<li><strong>End / Cleanup.</strong> “Until end of turn” effects wear off. Discard down to the maximum hand size of <strong>7</strong>. Damage on creatures and forts wears off unless a card says it marks permanent damage.</li>
+</ol>
+</section>
+
+<section id="combat">
+<h2><span class="num">8.</span>Combat &amp; Fortifications</h2>
+<p>Creatures deal combat damage equal to their <strong>power</strong>. A creature that has taken damage greater than or equal to its <strong>toughness</strong> is destroyed and goes to the graveyard. When multiple creatures block, the attacker’s controller chooses how to assign damage among the blockers (Wave 1 default), unless a keyword says otherwise.</p>
+<p>Fortifications have <strong>DEFENSE</strong> instead of P/T. Damage assigned to a fortification accumulates for the turn; when total damage ≥ DEFENSE, the fortification is destroyed. Many forts redirect or reduce damage that would hit you, your creatures or your Markets.</p>
+<div class="type-row"><div><p><strong>Earthen Berm</strong> (1 Quarry, DEF 3) gives your creatures +0/+1 and protects gold from Instant-speed taxes once those cards exist — a cheap frontline berm for an early economy.</p><p><strong>Ballista Tower</strong> (4 Forge + 1 Quarry, DEF 5) can shoot an attacker for 2 and grants economy forts +2 DEF, turning your markets into harder targets.</p></div><figure class="card">
+  <button class="card-btn" type="button" data-full="assets/img/cards/ballista-tower.webp" data-name="Ballista Tower" data-text="4 Forge + 1 Quarry, DEF 5. Shoot attacker for 2; econ forts +2 DEF." aria-label="View full card: Ballista Tower">
+    <img src="assets/img/thumbs/ballista-tower.webp" alt="Ballista Tower" width="560" height="315" loading="lazy" decoding="async">
+  </button>
+  <figcaption><span class="card-name">Ballista Tower</span><span class="card-text">4 Forge + 1 Quarry, DEF 5. Shoot attacker for 2; econ forts +2 DEF.</span></figcaption>
+</figure></div>
+<div class="callout"><span class="label">Siege vs. forts</span>Creatures with <strong>Siege</strong> (notably Dragon Wave mythics) may assign combat damage to fortifications as though they were attacking them directly, or deal bonus damage to DEFENSE as printed. Walls still matter — but a Tidecoil Colossus or Platebound Warwyrm is built to crack them.</div>
+</section>
+
+<section id="gold">
+<h2><span class="num">9.</span>Gold Economy</h2>
+<p>Gold is the second resource alongside mana. Track it with <strong>Treasure tokens</strong> (+1 gold each). When you gain gold, take Treasures from the shared pile. When you spend gold, return that many Treasures to the pile.</p>
+<div class="kw">
+<div><dt>Inflows</dt><dd>Economy fort Income during upkeep; enters-the-battlefield bursts (e.g. War Chest); other card effects.</dd></div>
+<div><dt>Outflows</dt><dd>Cast costs that list gold; building UPKEEP; Equip costs; equipment UPKEEP; optional Supply payment; dragon tribute / mythic gold costs.</dd></div>
+</div>
+<p>Gold does not untap or reset — unspent Treasures stay in front of you between turns. Managing upkeep vs. board presence is a core Wave 1 skill. Dragon casting costs often demand <strong>4–8 gold</strong> on top of heavy colored mana — plan markets and War Chests early.</p>
+</section>
+
+<section id="keywords">
+<h2><span class="num">10.</span>Keywords</h2>
+<p>Brief Wave 1 definitions. Exact reminder text on cards always wins if wording differs during playtest.</p>
+<dl class="kw">
+<div><dt>Aggressive</dt><dd>This creature can attack the turn it enters the battlefield.</dd></div>
+<div><dt>Armored</dt><dd>Prevent the first 1 damage that would be dealt to this creature each combat (or as printed).</dd></div>
+<div><dt>Multi-Strike</dt><dd>This creature may assign combat damage as though it had an extra strike — typically deal damage to an additional blocker or split power across two targets as printed.</dd></div>
+<div><dt>Slippery</dt><dd>Once per turn, this creature may dodge one blocker (that blocker is removed from combat with this creature).</dd></div>
+<div><dt>Ferocity</dt><dd>Gets +1 power when attacking (or as printed).</dd></div>
+<div><dt>Cover</dt><dd>Creatures behind this fortification (or as printed) gain a toughness or damage-prevention bonus.</dd></div>
+<div><dt>Muster</dt><dd>When this enters, create a 1/1 token or pump this creature (choose as printed).</dd></div>
+<div><dt>Redirect</dt><dd>May send damage that would hit this creature onto another Scrag you control.</dd></div>
+<div><dt>Fury / Battle Cry</dt><dd>Limited-use combat pumps or team-wide attack bonuses; see card for once-per-game timing.</dd></div>
+<div><dt>Dig</dt><dd>Look at the top cards of your library; put one into hand or as printed, rest on bottom.</dd></div>
+<div><dt>Temper</dt><dd>May improve Equipment or Forge permanents — see Field Blacksmith.</dd></div>
+<div><dt>Horde Standard</dt><dd>Tribal anthem / leadership effect for Orcs or listed allies.</dd></div>
+<div><dt>Ranged / Ping</dt><dd>Deal a small amount of damage to a target without needing to enter combat.</dd></div>
+<div><dt>War Blessing</dt><dd>Pump an Orc or deal direct damage — see Storm-Eye Channeler.</dd></div>
+<div><dt>Siege</dt><dd>Excels vs. fortifications — may assign combat damage to forts / deal bonus DEFENSE damage as printed.</dd></div>
+<div><dt>Crushing Tide</dt><dd>Ocean-apex pressure; often bounce or sweep after combat as printed on Tidecoil Colossus.</dd></div>
+<div><dt>Discorporation</dt><dd>Transform / leave as an alternate form (e.g. Worldcoil Sovereign → cat form) as printed.</dd></div>
+<div><dt>Vessel Bond</dt><dd>Control / synergy link between Ragbound Matriarch and Dualheart Vessel.</dd></div>
+</dl>
+</section>
+
+<section id="card-format">
+<h2><span class="num">11.</span>Card Format</h2>
+<p>Cards use a <strong>landscape layout with a side panel</strong> — art on the left or main area, text panel on the right. Physical cards are standard trading-card size (<strong>63 × 88 mm / 2.5 × 3.5 in</strong>), turned sideways: each card prints as a <strong>3.5 in wide × 2.5 in tall</strong> landscape card. Use the <strong>card-size</strong> Treasure token on cut sheets; square chips and coins are deluxe extras. See <a href="print.html">Print &amp; Play</a>.</p>
+</section>
+
+<section id="example">
+<h2><span class="num">12.</span>Worked Example Turn</h2>
+<div class="callout example"><span class="label">The situation</span>You are on turn four. Life 18, gold 1 (one Treasure). You control <strong>Forge Peak</strong> and <strong>Bastion Fields</strong>, plus an <strong>Earthen Berm</strong> from last turn. Your hand includes Camp Market, Warpaint Marauder and Militia Spear.</div>
+<ol class="steps">
+<li><strong>Untap / Upkeep.</strong> Untap your lands and the Berm. No economy income yet. No equipment upkeep. You have 1 creature, so Supply does not apply.</li>
+<li><strong>Draw.</strong> You draw Ironfang Bruiser — fine, keep it for later.</li>
+<li><strong>Main Phase 1.</strong> Play your land for the turn — a second <strong>Bastion Fields</strong>. Tap one Bastion Fields to cast <strong>Camp Market</strong> (1 Bastion). Tap Forge Peak to cast <strong>Warpaint Marauder</strong> (1 Forge, Aggressive). Cast <strong>Militia Spear</strong> for 1 Forge (from a mana rock or a second Forge land you untapped) — or pay 1 gold if that is how you cast it — then <strong>Equip</strong> the Spear onto the Marauder for 1 Gold, returning your Treasure to the pile. The Marauder is effectively <strong>3/1 when attacking</strong> (2/1 base, Ferocity +1 on attack, Spear +1/+0).</li>
+<li><strong>Combat.</strong> Declare Warpaint Marauder as an attacker (Aggressive lets it swing the turn it entered). Your opponent declines to block. The Marauder deals 3 damage; your opponent drops from 20 to 17. Your Berm’s +0/+1 kept a Scrag Raider alive earlier in the game — same idea next turn when you go wider.</li>
+<li><strong>Main Phase 2 / End.</strong> Nothing else. Next upkeep, Camp Market will bring in +1 Treasure. Hold the line.</li>
+</ol>
+<div class="card-grid" style="margin-top:1.2rem">
+<figure class="card">
+  <button class="card-btn" type="button" data-full="assets/img/cards/camp-market.webp" data-name="Camp Market" data-text="1 Bastion. Income +1, Upkeep 0, DEF 2." aria-label="View full card: Camp Market">
+    <img src="assets/img/thumbs/camp-market.webp" alt="Camp Market" width="560" height="315" loading="lazy" decoding="async">
+  </button>
+  <figcaption><span class="card-name">Camp Market</span><span class="card-text">1 Bastion. Income +1, Upkeep 0, DEF 2.</span></figcaption>
+</figure>
+<figure class="card">
+  <button class="card-btn" type="button" data-full="assets/img/cards/warpaint-marauder.webp" data-name="Warpaint Marauder" data-text="1 Forge, 2/1. Ferocity: +1 power when attacking." aria-label="View full card: Warpaint Marauder">
+    <img src="assets/img/thumbs/warpaint-marauder.webp" alt="Warpaint Marauder" width="560" height="315" loading="lazy" decoding="async">
+  </button>
+  <figcaption><span class="card-name">Warpaint Marauder</span><span class="card-text">1 Forge, 2/1. Ferocity: +1 power when attacking.</span></figcaption>
+</figure>
+<figure class="card">
+  <button class="card-btn" type="button" data-full="assets/img/cards/militia-spear.webp" data-name="Militia Spear" data-text="1 Forge or 1 Gold; Equip 1 Gold → +1/+0." aria-label="View full card: Militia Spear">
+    <img src="assets/img/thumbs/militia-spear.webp" alt="Militia Spear" width="560" height="315" loading="lazy" decoding="async">
+  </button>
+  <figcaption><span class="card-name">Militia Spear</span><span class="card-text">1 Forge or 1 Gold; Equip 1 Gold → +1/+0.</span></figcaption>
+</figure>
+</div>
+</section>
+
+<section id="dragons">
+<h2><span class="num">13.</span>Dragon Wave 1 <span class="badge badge-draft">Draft</span></h2>
+<p>The <strong>Dragon Wave 1</strong> section is a draft mythic package with original Weekend Land Escape names. Costs sit at the top of the ladder: multi-mark mana plus significant gold, with <strong>Tidecoil Colossus</strong> as the apex.</p>
+<ul>
+<li><strong>Mythic costs.</strong> Expect 4–8 gold plus 6–12 colored mana. Build your economy before you can cast them.</li>
+<li><strong>Siege vs. forts.</strong> Dragons with Siege (and equipment like Adamantine Drakeplate) are the answer to tall fort walls — they pressure DEFENSE hard.</li>
+<li><strong>Alternates are either/or draft choices</strong> for the same slot unless a card notes otherwise. Example: take <strong>Bleakcloud Devourer</strong> <em>or</em> <strong>Bleakcloud — Divide</strong>, not both. Same idea for Platebound Warwyrm vs. Platebound — Hordemaster.</li>
+<li><strong>Support pieces.</strong> Harbinger Whisker tutors the ocean apex pair; Dualheart Vessel synergizes with Ragbound Matriarch; Drakeplate equips dragons for Siege.</li>
+</ul>
+<div class="type-row"><div><div class="callout example"><span class="label">Mini example — late game</span>You have 8 gold, Harbor/Mire lands untapped, and Harbinger Whisker in play. Activate Whisker’s tutor to fetch Tidecoil Colossus, cast it next turn after another Income cycle, then attack a Stone Curtain Wall with Siege. Multi-Strike and Crushing Tide finish the board once the wall falls.</div></div><figure class="card">
+  <button class="card-btn" type="button" data-full="assets/img/cards/tidecoil-colossus.webp" data-name="Tidecoil Colossus" data-text="8 Harbor + 4 Mire + 8 Gold, 12/14. Amphibious ocean apex. Siege, Multi-Strike, Crushing Tide." aria-label="View full card: Tidecoil Colossus">
+    <img src="assets/img/thumbs/tidecoil-colossus.webp" alt="Tidecoil Colossus" width="560" height="315" loading="lazy" decoding="async">
+  </button>
+  <figcaption><span class="card-name">Tidecoil Colossus</span><span class="card-text">8 Harbor + 4 Mire + 8 Gold, 12/14. Amphibious ocean apex. Siege, Multi-Strike, Crushing Tide.</span></figcaption>
+</figure></div>
+</section>
+
+<p class="btn-row"><a class="btn btn-primary" href="cards.html">Browse all cards</a><a class="btn btn-ghost" href="print.html">Print &amp; Play</a></p>
+    </article>
+  </div>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Weekend Land Escape. All card names and art are original.</p>
+    <nav aria-label="Footer"><a href="index.html">Home</a><a href="cards.html">Cards</a><a href="rules.html">Rules</a><a href="print.html">Print &amp; Play</a></nav>
+  </div>
+</footer>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

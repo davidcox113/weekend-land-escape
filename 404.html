@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found · Weekend Land Escape</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
+<!-- Styles are inlined: GitHub Pages may serve this page from any nested path, where relative asset links would break. -->
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem;
+    color:#e9e3d8;font-family:"Alegreya Sans",system-ui,sans-serif;font-size:1.1rem;line-height:1.6;
+    background:#131315 radial-gradient(ellipse at 50% 0%,rgba(139,30,30,.35),transparent 60%)}
+  .box{max-width:560px;border:1px solid #a8842f;border-radius:12px;padding:2.5rem 2rem;background:rgba(26,26,28,.85);box-shadow:0 20px 60px rgba(0,0,0,.6)}
+  .code{font-family:Cinzel,serif;font-weight:900;font-size:4.5rem;line-height:1;color:#c0392b;margin:0}
+  h1{font-family:Cinzel,serif;color:#f4efe6;font-size:1.8rem;margin:.6rem 0}
+  p{color:#aaa196}
+  a.btn{display:inline-block;margin:.4rem;padding:.75rem 1.3rem;border-radius:6px;font-family:Cinzel,serif;font-weight:700;letter-spacing:.05em;
+    text-decoration:none;color:#fff;background:linear-gradient(180deg,#c0392b,#8b1e1e);border:1px solid #d65a4b}
+  a.ghost{background:transparent;color:#d4ad5a;border-color:#a8842f}
+</style>
+</head>
+<body>
+  <main class="box">
+    <p class="code">404</p>
+    <h1>This path is lost to the fog</h1>
+    <p>The page you were looking for isn’t here. Fall back to the walls and regroup.</p>
+    <p>
+      <a class="btn" id="home" href="index.html">Return Home</a>
+      <a class="btn ghost" id="cards" href="cards.html">Browse Cards</a>
+    </p>
+    <p style="font-size:.9rem;margin-top:1.5rem">&copy; 2026 Weekend Land Escape. All card names and art are original.</p>
+  </main>
+<script>
+  // On a GitHub Pages project site (user.github.io/repo/...), point links at the repo root.
+  (function () {
+    var base = "";
+    if (/\.github\.io$/.test(location.hostname)) {
+      var seg = location.pathname.split("/").filter(Boolean)[0];
+      base = seg ? "/" + seg + "/" : "/";
+    }
+    if (base) {
+      document.getElementById("home").href = base + "index.html";
+      document.getElementById("cards").href = base + "cards.html";
+    }
+  })();
+</script>
+</body>
+</html>
