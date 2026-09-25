@@ -7,7 +7,7 @@ Plain HTML + CSS + a little vanilla JS. No frameworks, no build step, no npm.
 | File | What it is |
 |---|---|
 | `index.html` | Home: hero, pitch, mana marks, featured cards, printed-decks "coming soon" |
-| `cards.html` | Card gallery grouped by unit, unit filter buttons, click-to-zoom lightbox (incl. Race Wave 1 preview) |
+| `cards.html` | Card gallery grouped by unit, unit filter buttons, click-to-zoom lightbox (incl. Race Wave 1 and Wave 2 previews) |
 | `rules.html` | Instruction manual (draft/playtest rules) with worked examples |
 | `print.html` | Print-and-play PDF download + printing instructions |
 | `404.html` | Not-found page (self-contained styles, works from any path) |
