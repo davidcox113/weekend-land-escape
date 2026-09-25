@@ -9,6 +9,7 @@ Plain HTML + CSS + a little vanilla JS. No frameworks, no build step, no npm.
 | `index.html` | Home: hero, pitch, mana marks, featured cards, printed-decks "coming soon" |
 | `cards.html` | Card gallery grouped by unit (incl. Race Wave 1, Wave 2, Minotaur Wave and Stand-alone Monster previews): jump nav, sticky filter/sort/search toolbar (mana, type, rarity, set; filters are shareable via the URL query), click-to-zoom lightbox |
 | `rules.html` | Instruction manual (draft/playtest rules) with worked examples |
+| `decks.html` | Deck Design & Balance: sample decklists (card names link to the gallery), play-by-plays, deck-split tables, playtest charts, PROPOSED balance changes and Commander format (built from the playtest write-up) |
 | `print.html` | Print-and-play PDF download + printing instructions |
 | `404.html` | Not-found page (self-contained styles, works from any path) |
 

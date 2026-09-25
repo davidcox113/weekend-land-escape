@@ -46,7 +46,7 @@ p{margin:0 0 1em}
 .nav a[aria-current="page"]{color:var(--gold); border-color:var(--gold-soft); background:rgba(212,173,90,.07)}
 .nav-toggle{display:none; background:none; border:1px solid var(--iron-500); color:var(--text); border-radius:6px;
   padding:.45rem .6rem; font-size:1.2rem; cursor:pointer}
-@media (max-width:760px){
+@media (max-width:880px){
   .nav-toggle{display:block}
   .nav{position:absolute; top:100%; left:0; right:0; background:var(--iron-950); border-bottom:1px solid var(--iron-600); display:none}
   .nav.open{display:block}
@@ -274,3 +274,51 @@ p{margin:0 0 1em}
   .jump-nav{flex-wrap:nowrap; overflow-x:auto; padding-bottom:.35rem}
   .jump-nav a{flex:0 0 auto}
 }
+
+/* Deck Design & Balance page (decks.html) */
+.badge-proposed{background:rgba(192,57,43,.16); color:#ffb4a8; border:1px dashed var(--crimson-bright)}
+.proposed-notice{border-style:dashed}
+.top-notice{margin:0 0 1.2rem; max-width:75ch; font-size:1.02rem}
+.decks{padding-bottom:1rem}
+.decks-sec{padding:1rem 0 2rem; border-bottom:1px solid var(--iron-700); margin-bottom:1.5rem; scroll-margin-top:84px}
+.decks-sec h2{font-size:clamp(1.5rem,3vw,2rem)}
+.decks-sec h3{color:var(--gold); margin-top:1.8rem; font-size:1.2rem; scroll-margin-top:84px}
+.decks-sec > p,.decks-sec > ul,.decks-sec > ol{max-width:80ch}
+.decks-sec li{margin:.35rem 0}
+.decks-sec h2 .badge,.decks-sec h3 .badge{font-size:.62rem}
+.table-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch; margin:1rem 0 1.4rem; border:1px solid var(--iron-600); border-radius:8px;
+  background:var(--iron-800)}
+.table-scroll:focus-visible{outline:2px solid var(--gold)}
+.data-table{border-collapse:collapse; width:100%; font-size:.95rem}
+.data-table th{font-family:var(--font-display); font-size:.78rem; letter-spacing:.08em; text-transform:uppercase; color:var(--gold);
+  text-align:left; background:var(--iron-700); padding:.6rem .7rem; border-bottom:2px solid var(--crimson-dark); white-space:nowrap}
+.data-table td{padding:.5rem .7rem; border-bottom:1px solid var(--iron-700); vertical-align:top; line-height:1.4}
+.data-table tbody tr:nth-child(even) td{background:rgba(255,255,255,.018)}
+.data-table strong{color:var(--parchment)}
+.deck-table{min-width:560px} .deck-table td{width:33%}
+.deck-table .qty{display:inline-block; min-width:1.4em; font-family:var(--font-display); font-weight:700; color:var(--crimson-bright)}
+.card-link{color:var(--text); text-decoration:none; border-bottom:1px dotted var(--gold-dim)}
+.card-link:hover{color:var(--gold); border-bottom-color:var(--gold)}
+.pbp-table{min-width:1150px; font-size:.9rem}
+.pbp-table td:first-child,.pbp-table td:nth-child(2){white-space:nowrap; font-family:var(--font-display); font-size:.82rem; color:var(--parchment)}
+.pbp-table td:nth-child(5),.pbp-table td:nth-child(6){min-width:220px}
+.pbp-table td:last-child{min-width:190px; color:var(--muted)}
+.split-table{min-width:420px; max-width:760px}
+.chart{margin:1.4rem 0 1.8rem; max-width:1000px}
+.chart-btn{background:#fff; border-radius:8px; padding:.4rem; box-shadow:0 0 0 1px var(--gold-dim),0 10px 26px rgba(0,0,0,.5)}
+.chart-btn img{object-fit:contain; width:100%}
+.chart figcaption{color:var(--muted); font-size:.95rem; margin-top:.6rem; max-width:80ch}
+.fix-list{padding-left:1.4rem} .fix-list li{margin:.7rem 0} .fix-list .badge{margin:0 .35rem 0 0; font-size:.62rem}
+.tiles-3{margin-top:1rem}
+.tile-pick{border-top-color:var(--gold)}
+.tile .pick{display:inline-block; font-family:var(--font-body); font-size:.72rem; letter-spacing:.06em; text-transform:uppercase;
+  color:var(--iron-900); background:var(--gold); border-radius:4px; padding:.05rem .4rem; vertical-align:middle}
+.small-note{font-size:.92rem; margin-top:-.2rem}
+.decks-teaser{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1.2rem 2rem; padding:1.8rem 1.6rem;
+  border:1px solid var(--iron-600); border-left:4px solid var(--crimson); border-radius:var(--radius);
+  background:linear-gradient(90deg,rgba(139,30,30,.16),rgba(0,0,0,.15))}
+.decks-teaser > div{flex:1 1 420px} .decks-teaser h2{margin-bottom:.4rem} .decks-teaser p:last-child{margin:0}
+@media (max-width:760px){ .decks-sec{scroll-margin-top:76px} .chart-btn{padding:.2rem} }
+.scroll-hint{display:none; font-size:.8rem; color:var(--muted); margin:.8rem 0 -.6rem; text-align:right}
+@media (max-width:760px){ .scroll-hint{display:block} }
+.decks-sec .tile h3{margin-top:0}

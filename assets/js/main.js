@@ -240,11 +240,13 @@
     if (!el) return;
     if (el.offsetParent === null && gallery) gallery.reset();
     var isCard = el.classList.contains("card");
-    var lastY = -1;
+    var userMoved = false;
+    ["wheel", "touchstart", "keydown", "mousedown"].forEach(function (ev) {
+      window.addEventListener(ev, function () { userMoved = true; }, { once: true, passive: true });
+    });
     function align() {
-      if (lastY !== -1 && Math.abs(window.pageYOffset - lastY) > 4) return;  // user moved; leave them be
+      if (userMoved) return;  // the visitor has started scrolling; leave them be
       el.scrollIntoView({ block: isCard ? "center" : "start", behavior: "instant" });
-      lastY = window.pageYOffset;
     }
     align();
     if (isCard && triggers.length) { var btn = el.querySelector(".card-btn"); if (btn) open(btn); }
