@@ -112,6 +112,10 @@ p{margin:0 0 1em}
 .card figcaption{padding:.7rem .9rem .85rem; flex:1}
 .card-name{font-family:var(--font-display); color:var(--parchment); font-size:1rem; font-weight:700; display:block; margin-bottom:.2rem}
 .card-text{font-size:.93rem; color:var(--muted); line-height:1.4; display:block}
+.card-note{display:inline-block; margin-top:.45rem; font-size:.74rem; letter-spacing:.02em; color:var(--gold); background:rgba(212,173,90,.08);
+  border:1px dashed var(--gold-dim); border-radius:4px; padding:.12rem .45rem; font-style:italic}
+.kw-group{margin:1.1rem 0 .3rem; font-size:1.05rem; display:flex; align-items:center; gap:.5rem}
+.kw-group img{width:26px; height:26px}
 .badge{display:inline-block; font-family:var(--font-display); font-size:.72rem; letter-spacing:.12em; text-transform:uppercase;
   padding:.18rem .55rem; border-radius:4px; vertical-align:middle; margin-left:.5rem; font-weight:700}
 .badge-draft{background:var(--crimson-dark); color:#ffd9d2; border:1px solid var(--crimson)}

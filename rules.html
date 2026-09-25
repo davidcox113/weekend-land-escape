@@ -53,7 +53,8 @@
     <h1>How to Play</h1>
     <hr class="divider">
     <p class="lead">Everything you need to play Weekend Land Escape Wave 1: card types, the turn, combat, fortifications and the gold economy.</p>
-    <p class="notice"><strong>Draft / playtest rules.</strong> Expect wording, costs and timing to shift as Wave 1 locks. Exact reminder text on a card always wins if wording differs.</p>
+    <p class="notice"><strong>Draft / playtest rules, updated for Keywords v2.</strong> Creature keywords are now a set of 12 (see <a href="#keywords">Keywords</a>), and any unblocked creature attacking a fort deals 1 damage to it (Siege: full power). Expect wording, costs and timing to shift as Wave 1 locks. A card’s own text always wins if wording differs.</p>
+    <p class="btn-row"><a class="btn btn-primary" href="downloads/WLE-Rulebook-v0.10.pdf">&#11015; Rulebook PDF (v0.10)</a></p>
   </header>
   <div class="rules-layout">
     <nav class="toc" aria-label="Rules contents"><h2>Contents</h2><ol>
@@ -108,10 +109,10 @@
 </figure></div>
 <h3>Creatures</h3>
 <div class="type-row"><div><p>Creatures have <strong>power / toughness</strong>. Power is the damage they deal in combat; toughness is their hit points. Creatures enter tapped only if a card says so; most cannot attack the turn they enter unless they have <strong>Aggressive</strong> (or a similar exemption). Dragon mythics are high-cost apex creatures — see <a href="#dragons">Dragon Wave 1</a>.</p></div><figure class="card">
-  <button class="card-btn" type="button" data-full="assets/img/cards/warpaint-marauder.webp" data-name="Warpaint Marauder" data-text="1 Forge, 2/1. Ferocity: +1 power when attacking." aria-label="View full card: Warpaint Marauder">
+  <button class="card-btn" type="button" data-full="assets/img/cards/warpaint-marauder.webp" data-name="Warpaint Marauder" data-text="1 Forge, 2/2. (Updated rules text; reprint coming: the image still shows the old text.)" aria-label="View full card: Warpaint Marauder">
     <img src="assets/img/thumbs/warpaint-marauder.webp" alt="Warpaint Marauder" width="560" height="315" loading="lazy" decoding="async">
   </button>
-  <figcaption><span class="card-name">Warpaint Marauder</span><span class="card-text">1 Forge, 2/1. Ferocity: +1 power when attacking.</span></figcaption>
+  <figcaption><span class="card-name">Warpaint Marauder</span><span class="card-text">1 Forge, 2/2.</span><span class="card-note">Updated rules text; reprint coming</span></figcaption>
 </figure></div>
 <h3>Instants &amp; Sorceries (planned)</h3>
 <p>Instants can be cast any time you have priority — including during combat and on an opponent’s turn. Sorceries are cast only during your main phase when nothing else is waiting to resolve. <em>Wave 1 does not include Instants or Sorceries yet; they are planned for later waves.</em></p>
@@ -123,11 +124,11 @@
   <figcaption><span class="card-name">Forge Heart</span><span class="card-text">2 Forge → 1 Forge.</span></figcaption>
 </figure></div>
 <h3>Fortifications</h3>
-<div class="type-row"><div><p>Structures use <strong>DEFENSE</strong> instead of power/toughness. When a fortification has taken damage equal to its DEFENSE, it is destroyed. Forts protect troops and economic buildings — walls reduce incoming pressure, towers shoot attackers, gates soak hits meant for markets. <strong>Siege</strong> creatures are especially good at punching through forts.</p></div><figure class="card">
-  <button class="card-btn" type="button" data-full="assets/img/cards/earthen-berm.webp" data-name="Earthen Berm" data-text="1 Quarry, DEF 3. +0/+1 to creatures; protects gold from Instant taxes." aria-label="View full card: Earthen Berm">
+<div class="type-row"><div><p>Structures use <strong>DEFENSE</strong> instead of power/toughness. When a fortification has taken damage equal to its DEFENSE, it is destroyed. Forts protect troops and economic buildings — walls reduce incoming pressure, towers shoot attackers, gates soak hits meant for markets. Any unblocked creature attacking a fort chips it for 1 damage; <strong>Siege</strong> creatures hit it for their full power.</p></div><figure class="card">
+  <button class="card-btn" type="button" data-full="assets/img/cards/earthen-berm.webp" data-name="Earthen Berm" data-text="1 Quarry, DEF 3. Your creatures get +0/+1. Opponents&#x27; Instants can&#x27;t reduce your gold income. (Updated rules text; reprint coming: the image still shows the old text.)" aria-label="View full card: Earthen Berm">
     <img src="assets/img/thumbs/earthen-berm.webp" alt="Earthen Berm" width="560" height="315" loading="lazy" decoding="async">
   </button>
-  <figcaption><span class="card-name">Earthen Berm</span><span class="card-text">1 Quarry, DEF 3. +0/+1 to creatures; protects gold from Instant taxes.</span></figcaption>
+  <figcaption><span class="card-name">Earthen Berm</span><span class="card-text">1 Quarry, DEF 3. Your creatures get +0/+1. Opponents&#x27; Instants can&#x27;t reduce your gold income.</span><span class="card-note">Updated rules text; reprint coming</span></figcaption>
 </figure></div>
 <h3>Economy Fortifications</h3>
 <div class="type-row"><div><p>A subset of forts that produce <strong>Income</strong> (gold) during your upkeep. Richer buildings often have <strong>UPKEEP</strong> gold costs. Miss an upkeep and you typically forfeit that building’s income for the turn (see individual cards). No per-soldier wages — the economy is building-driven.</p></div><figure class="card">
@@ -218,7 +219,8 @@
   </button>
   <figcaption><span class="card-name">Ballista Tower</span><span class="card-text">4 Forge + 1 Quarry, DEF 5. Shoot attacker for 2; econ forts +2 DEF.</span></figcaption>
 </figure></div>
-<div class="callout"><span class="label">Siege vs. forts</span>Creatures with <strong>Siege</strong> (notably Dragon Wave mythics) may assign combat damage to fortifications as though they were attacking them directly, or deal bonus damage to DEFENSE as printed. Walls still matter — but a Tidecoil Colossus or Platebound Warwyrm is built to crack them.</div>
+<div class="callout"><span class="label">Attacking forts &amp; Siege</span>When you attack, each attacking creature attacks the defending player <strong>or one of their Fortifications</strong>. If a creature attacking a fort is <strong>unblocked</strong>, it deals <strong>1 damage</strong> to that fort. A creature with <strong>Siege</strong> deals its <strong>full power</strong> instead. Blocked attackers fight their blockers as usual. A fort is destroyed when the damage on it this turn is equal to or more than its DEFENSE. If a fort’s own text disagrees (for example, Thousand-Banner Citadel: only Siege creatures can damage it), the card wins.</div>
+<p><em>Example:</em> Ironbelly Siege-Hurler (3/4, Siege) and Warpaint Marauder (2/2) both attack your opponent’s Stone Curtain Wall (DEF 6). Nobody blocks. The Hurler deals 3 and the Marauder deals 1: 4 damage, so the Wall stands this turn. Add a second Siege creature, or a <strong>Fire Breath</strong> creature arriving before combat, and it falls.</p>
 </section>
 
 <section id="gold">
@@ -233,27 +235,38 @@
 
 <section id="keywords">
 <h2><span class="num">10.</span>Keywords</h2>
-<p>Brief Wave 1 definitions. Exact reminder text on cards always wins if wording differs during playtest.</p>
+<p>Keywords v2: every creature keyword in the game is one of these <strong>12</strong>, two per mana mark. A card carries the keywords of its own marks. Cards with one keyword print this reminder text; cards with two keywords print them bare. Mythics may also have one named ability, explained on the card. Other rules words (Legendary, Equip, Income, Upkeep, Upgrade, Garrison, Token) work as described on this page.</p>
+<h3 class="kw-group"><img src="assets/img/mana/bastion.webp" alt="Bastion mana mark" width="26" height="26" loading="lazy">Bastion</h3>
 <dl class="kw">
-<div><dt>Aggressive</dt><dd>This creature can attack the turn it enters the battlefield.</dd></div>
-<div><dt>Armored</dt><dd>Prevent the first 1 damage that would be dealt to this creature each combat (or as printed).</dd></div>
-<div><dt>Multi-Strike</dt><dd>This creature may assign combat damage as though it had an extra strike — typically deal damage to an additional blocker or split power across two targets as printed.</dd></div>
-<div><dt>Slippery</dt><dd>Once per turn, this creature may dodge one blocker (that blocker is removed from combat with this creature).</dd></div>
-<div><dt>Ferocity</dt><dd>Gets +1 power when attacking (or as printed).</dd></div>
-<div><dt>Cover</dt><dd>Creatures behind this fortification (or as printed) gain a toughness or damage-prevention bonus.</dd></div>
-<div><dt>Muster</dt><dd>When this enters, create a 1/1 token or pump this creature (choose as printed).</dd></div>
-<div><dt>Redirect</dt><dd>May send damage that would hit this creature onto another Scrag you control.</dd></div>
-<div><dt>Fury / Battle Cry</dt><dd>Limited-use combat pumps or team-wide attack bonuses; see card for once-per-game timing.</dd></div>
-<div><dt>Dig</dt><dd>Look at the top cards of your library; put one into hand or as printed, rest on bottom.</dd></div>
-<div><dt>Temper</dt><dd>May improve Equipment or Forge permanents — see Field Blacksmith.</dd></div>
-<div><dt>Horde Standard</dt><dd>Tribal anthem / leadership effect for Orcs or listed allies.</dd></div>
-<div><dt>Ranged / Ping</dt><dd>Deal a small amount of damage to a target without needing to enter combat.</dd></div>
-<div><dt>War Blessing</dt><dd>Pump an Orc or deal direct damage — see Storm-Eye Channeler.</dd></div>
-<div><dt>Siege</dt><dd>Excels vs. fortifications — may assign combat damage to forts / deal bonus DEFENSE damage as printed.</dd></div>
-<div><dt>Crushing Tide</dt><dd>Ocean-apex pressure; often bounce or sweep after combat as printed on Tidecoil Colossus.</dd></div>
-<div><dt>Discorporation</dt><dd>Transform / leave as an alternate form (e.g. Worldcoil Sovereign → cat form) as printed.</dd></div>
-<div><dt>Vessel Bond</dt><dd>Control / synergy link between Ragbound Matriarch and Dualheart Vessel.</dd></div>
+<div><dt>Armored</dt><dd>Prevent 1 damage each time this is dealt damage.</dd></div>
+<div><dt>Rally</dt><dd>When this attacks, your other attacking creatures get +1/+0 this turn.</dd></div>
 </dl>
+<h3 class="kw-group"><img src="assets/img/mana/harbor.webp" alt="Harbor mana mark" width="26" height="26" loading="lazy">Harbor</h3>
+<dl class="kw">
+<div><dt>Flying</dt><dd>Can only be blocked by creatures with Flying.</dd></div>
+<div><dt>Snare</dt><dd>When this attacks, tap target creature with less power.</dd></div>
+</dl>
+<h3 class="kw-group"><img src="assets/img/mana/mire.webp" alt="Mire mana mark" width="26" height="26" loading="lazy">Mire</h3>
+<dl class="kw">
+<div><dt>Relentless</dt><dd>When this dies, you may pay 1 gold to return it to your hand.</dd></div>
+<div><dt>Lifedrink</dt><dd>When this deals combat damage, you gain that much life.</dd></div>
+</dl>
+<h3 class="kw-group"><img src="assets/img/mana/forge.webp" alt="Forge mana mark" width="26" height="26" loading="lazy">Forge</h3>
+<dl class="kw">
+<div><dt>Aggressive</dt><dd>Can attack the turn it arrives.</dd></div>
+<div><dt>Fire Breath X</dt><dd>When this enters, deal X damage to target creature or fort.</dd></div>
+</dl>
+<h3 class="kw-group"><img src="assets/img/mana/wildwood.webp" alt="Wildwood mana mark" width="26" height="26" loading="lazy">Wildwood</h3>
+<dl class="kw">
+<div><dt>Pack</dt><dd>+1/+0 while attacking alongside another creature.</dd></div>
+<div><dt>Camouflage</dt><dd>Can&#x27;t be blocked by creatures with greater power.</dd></div>
+</dl>
+<h3 class="kw-group"><img src="assets/img/mana/quarry.webp" alt="Quarry mana mark" width="26" height="26" loading="lazy">Quarry</h3>
+<dl class="kw">
+<div><dt>Charge</dt><dd>+2/+0 when attacking.</dd></div>
+<div><dt>Siege</dt><dd>Deals its full power to a fort it attacks. (Without Siege, an unblocked attacker deals just 1 damage to a fort.)</dd></div>
+</dl>
+<p class="muted">Some cards shown in the gallery still carry their old printed keywords while their reprint is on the way. Their tile says <em>“Updated rules text; reprint coming”</em>: play them by the text on the website.</p>
 </section>
 
 <section id="card-format">
@@ -263,12 +276,12 @@
 
 <section id="example">
 <h2><span class="num">12.</span>Worked Example Turn</h2>
-<div class="callout example"><span class="label">The situation</span>You are on turn four. Life 18, gold 1 (one Treasure). You control <strong>Forge Peak</strong> and <strong>Bastion Fields</strong>, plus an <strong>Earthen Berm</strong> from last turn. Your hand includes Camp Market, Warpaint Marauder and Militia Spear.</div>
+<div class="callout example"><span class="label">The situation</span>You are on turn four. Life 18, gold 1 (one Treasure). You control <strong>Forge Peak</strong>, <strong>Bastion Fields</strong>, an <strong>Earthen Berm</strong> and a <strong>Warpaint Marauder</strong> (1 Forge, 2/2) you cast last turn. Your hand includes Camp Market and Militia Spear. Your opponent has a <strong>Wooden Palisade</strong> and no untapped creatures.</div>
 <ol class="steps">
-<li><strong>Untap / Upkeep.</strong> Untap your lands and the Berm. No economy income yet. No equipment upkeep. You have 1 creature, so Supply does not apply.</li>
-<li><strong>Draw.</strong> You draw Ironfang Bruiser — fine, keep it for later.</li>
-<li><strong>Main Phase 1.</strong> Play your land for the turn — a second <strong>Bastion Fields</strong>. Tap one Bastion Fields to cast <strong>Camp Market</strong> (1 Bastion). Tap Forge Peak to cast <strong>Warpaint Marauder</strong> (1 Forge, Aggressive). Cast <strong>Militia Spear</strong> for 1 Forge (from a mana rock or a second Forge land you untapped) — or pay 1 gold if that is how you cast it — then <strong>Equip</strong> the Spear onto the Marauder for 1 Gold, returning your Treasure to the pile. The Marauder is effectively <strong>3/1 when attacking</strong> (2/1 base, Ferocity +1 on attack, Spear +1/+0).</li>
-<li><strong>Combat.</strong> Declare Warpaint Marauder as an attacker (Aggressive lets it swing the turn it entered). Your opponent declines to block. The Marauder deals 3 damage; your opponent drops from 20 to 17. Your Berm’s +0/+1 kept a Scrag Raider alive earlier in the game — same idea next turn when you go wider.</li>
+<li><strong>Untap / Upkeep.</strong> Untap your lands, the Berm and the Marauder. No economy income yet. No equipment upkeep. You have 1 creature, so Supply does not apply.</li>
+<li><strong>Draw.</strong> You draw Ironfang Bruiser — keep it for later.</li>
+<li><strong>Main Phase 1.</strong> Play your land for the turn — a second <strong>Bastion Fields</strong>. Tap it to cast <strong>Camp Market</strong> (1 Bastion). Tap Forge Peak to cast <strong>Militia Spear</strong> (1 Forge), then <strong>Equip</strong> it onto the Marauder for 1 Gold, returning your Treasure to the pile. The Marauder is now <strong>3/3</strong> (2/2 base, Spear +1/+0, Berm +0/+1).</li>
+<li><strong>Combat.</strong> The Marauder has been under your control since the start of the turn, so it can attack. Attack the player: unblocked, it deals 3 and your opponent drops from 20 to 17. (Attacking the Palisade instead would deal only <strong>1</strong> damage to it, because the Marauder doesn’t have Siege.)</li>
 <li><strong>Main Phase 2 / End.</strong> Nothing else. Next upkeep, Camp Market will bring in +1 Treasure. Hold the line.</li>
 </ol>
 <div class="card-grid" style="margin-top:1.2rem">
@@ -279,10 +292,10 @@
   <figcaption><span class="card-name">Camp Market</span><span class="card-text">1 Bastion. Income +1, Upkeep 0, DEF 2.</span></figcaption>
 </figure>
 <figure class="card">
-  <button class="card-btn" type="button" data-full="assets/img/cards/warpaint-marauder.webp" data-name="Warpaint Marauder" data-text="1 Forge, 2/1. Ferocity: +1 power when attacking." aria-label="View full card: Warpaint Marauder">
+  <button class="card-btn" type="button" data-full="assets/img/cards/warpaint-marauder.webp" data-name="Warpaint Marauder" data-text="1 Forge, 2/2. (Updated rules text; reprint coming: the image still shows the old text.)" aria-label="View full card: Warpaint Marauder">
     <img src="assets/img/thumbs/warpaint-marauder.webp" alt="Warpaint Marauder" width="560" height="315" loading="lazy" decoding="async">
   </button>
-  <figcaption><span class="card-name">Warpaint Marauder</span><span class="card-text">1 Forge, 2/1. Ferocity: +1 power when attacking.</span></figcaption>
+  <figcaption><span class="card-name">Warpaint Marauder</span><span class="card-text">1 Forge, 2/2.</span><span class="card-note">Updated rules text; reprint coming</span></figcaption>
 </figure>
 <figure class="card">
   <button class="card-btn" type="button" data-full="assets/img/cards/militia-spear.webp" data-name="Militia Spear" data-text="1 Forge or 1 Gold; Equip 1 Gold → +1/+0." aria-label="View full card: Militia Spear">
@@ -298,15 +311,15 @@
 <p>The <strong>Dragon Wave 1</strong> section is a draft mythic package with original Weekend Land Escape names. Costs sit at the top of the ladder: multi-mark mana plus significant gold, with <strong>Tidecoil Colossus</strong> as the apex.</p>
 <ul>
 <li><strong>Mythic costs.</strong> Expect 4–8 gold plus 6–12 colored mana. Build your economy before you can cast them.</li>
-<li><strong>Siege vs. forts.</strong> Dragons with Siege (and equipment like Adamantine Drakeplate) are the answer to tall fort walls — they pressure DEFENSE hard.</li>
+<li><strong>Siege vs. forts.</strong> Dragons with Siege (Worldcoil Sovereign, Platebound Warwyrm, Platebound — Hordemaster, or any Dragon wearing Adamantine Drakeplate) hit a fort for their full power, the answer to tall fort walls.</li>
 <li><strong>Alternates are either/or draft choices</strong> for the same slot unless a card notes otherwise. Example: take <strong>Bleakcloud Devourer</strong> <em>or</em> <strong>Bleakcloud — Divide</strong>, not both. Same idea for Platebound Warwyrm vs. Platebound — Hordemaster.</li>
-<li><strong>Support pieces.</strong> Harbinger Whisker tutors the ocean apex pair; Dualheart Vessel synergizes with Ragbound Matriarch; Drakeplate equips dragons for Siege.</li>
+<li><strong>Support pieces.</strong> Harbinger Whisker fetches the ocean apex pair; Dualheart Vessel protects Ragbound Matriarch; Drakeplate gives a Dragon Siege.</li>
 </ul>
-<div class="type-row"><div><div class="callout example"><span class="label">Mini example — late game</span>You have 8 gold, Harbor/Mire lands untapped, and Harbinger Whisker in play. Activate Whisker’s tutor to fetch Tidecoil Colossus, cast it next turn after another Income cycle, then attack a Stone Curtain Wall with Siege. Multi-Strike and Crushing Tide finish the board once the wall falls.</div></div><figure class="card">
-  <button class="card-btn" type="button" data-full="assets/img/cards/tidecoil-colossus.webp" data-name="Tidecoil Colossus" data-text="8 Harbor + 4 Mire + 8 Gold, 12/14. Amphibious ocean apex. Siege, Multi-Strike, Crushing Tide." aria-label="View full card: Tidecoil Colossus">
+<div class="type-row"><div><div class="callout example"><span class="label">Mini example — late game</span>You have 8 gold, Harbor/Mire lands untapped, and Harbinger Whisker in play. Sacrifice Whisker and pay 3 gold to fetch Tidecoil Colossus, then cast it next turn after another Income cycle. When it attacks, <strong>Snare</strong> taps a smaller blocker and <strong>Crushing Tide</strong> deals 3 damage to each defending creature.</div></div><figure class="card">
+  <button class="card-btn" type="button" data-full="assets/img/cards/tidecoil-colossus.webp" data-name="Tidecoil Colossus" data-text="8 Harbor + 4 Mire + 8 Gold, 12/14. Snare. Crushing Tide — When this attacks, deal 3 damage to each creature the defending player controls. (Updated rules text; reprint coming: the image still shows the old text.)" aria-label="View full card: Tidecoil Colossus">
     <img src="assets/img/thumbs/tidecoil-colossus.webp" alt="Tidecoil Colossus" width="560" height="315" loading="lazy" decoding="async">
   </button>
-  <figcaption><span class="card-name">Tidecoil Colossus</span><span class="card-text">8 Harbor + 4 Mire + 8 Gold, 12/14. Amphibious ocean apex. Siege, Multi-Strike, Crushing Tide.</span></figcaption>
+  <figcaption><span class="card-name">Tidecoil Colossus</span><span class="card-text">8 Harbor + 4 Mire + 8 Gold, 12/14. Snare. Crushing Tide — When this attacks, deal 3 damage to each creature the defending player controls.</span><span class="card-note">Updated rules text; reprint coming</span></figcaption>
 </figure></div>
 </section>
 

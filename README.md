@@ -22,8 +22,11 @@ assets/img/hero.jpg         homepage hero image (swap this one file to change it
 assets/img/og-image.jpg     1200x630 social share image
 assets/img/cards/*.webp     full-size card art (1280 px wide)
 assets/img/thumbs/*.webp    560 px thumbnails used in grids
+assets/img/cards-v2/*.webp  Keywords v2 panel reprints (88 cards; originals in cards/ are kept)
+assets/img/thumbs-v2/*.webp 560 px thumbnails of the v2 reprints
 assets/img/mana/*.webp      mana mark icons (cropped from the mana sheet; gold from the Treasure coin)
 downloads/weekend-land-escape-print-and-play.pdf
+downloads/WLE-Rulebook-v0.10.pdf   rules-only rulebook (built by /workspace/wle-pdf/build_rulebook.py)
 favicon.ico, .nojekyll
 ```
 
