@@ -7,7 +7,7 @@ Plain HTML + CSS + a little vanilla JS. No frameworks, no build step, no npm.
 | File | What it is |
 |---|---|
 | `index.html` | Home: hero, pitch, mana marks, featured cards, printed-decks "coming soon" |
-| `cards.html` | Card gallery grouped by unit, unit filter buttons, click-to-zoom lightbox (incl. Race Wave 1 and Wave 2 previews) |
+| `cards.html` | Card gallery grouped by unit (incl. Race Wave 1, Wave 2, Minotaur Wave and Stand-alone Monster previews): jump nav, sticky filter/sort/search toolbar (mana, type, rarity, set; filters are shareable via the URL query), click-to-zoom lightbox |
 | `rules.html` | Instruction manual (draft/playtest rules) with worked examples |
 | `print.html` | Print-and-play PDF download + printing instructions |
 | `404.html` | Not-found page (self-contained styles, works from any path) |
@@ -15,7 +15,7 @@ Plain HTML + CSS + a little vanilla JS. No frameworks, no build step, no npm.
 ## Structure
 ```
 assets/css/style.css        all styles
-assets/js/main.js           mobile nav, unit filters, lightbox, #card deep links
+assets/js/main.js           mobile nav, gallery filters/sort/search, lightbox, #card deep links
 assets/img/hero.jpg         homepage hero image (swap this one file to change it)
 assets/img/og-image.jpg     1200x630 social share image
 assets/img/cards/*.webp     full-size card art (1280 px wide)
