@@ -8,8 +8,9 @@
   var dock = document.getElementById("deck-builder");
   if (!dock) return;
   var TARGET = 100, KEY = "wle-deck-v1", PREV = "wle-deck-prev";
-  var TYPES = [["creature", "Creatures"], ["land", "Lands"], ["fortification", "Fortifications"], ["economy", "Economy"],
-               ["equipment", "Equipment"], ["artifact", "Artifacts"], ["token", "Tokens"]];
+  var TYPES = [["creature", "Creatures"], ["instant", "Instants"], ["sorcery", "Sorceries"], ["enhancement", "Enhancements"],
+               ["land", "Lands"], ["fortification", "Fortifications"], ["economy", "Economy"], ["equipment", "Equipment"],
+               ["artifact", "Artifacts"], ["siege_engine", "Siege Engines"], ["token", "Tokens"]];
   var MARKS = ["bastion", "harbor", "mire", "forge", "wildwood", "quarry"];
   var GROUP_NAMES = { "count-valdrek": "Count Valdrek", "bleakcloud": "Bleakcloud", "platebound": "Platebound" };
   var $ = function (id) { return document.getElementById(id); };
@@ -26,9 +27,9 @@
     var d = el.dataset, cost = +d.cost || 0, gold = +d.gold || 0;
     var c = { slug: el.id, name: d.name, type: d.type, mana: (d.mana || "").split(" ").filter(Boolean), cost: cost, gold: gold,
               mv: Math.max(0, cost - gold), legendary: d.legendary === "1", token: d.token === "1", basic: d.basic === "1",
-              lgroup: d.lgroup || "", el: el };
-    c.limit = c.token ? 0 : c.basic ? Infinity : c.legendary ? 1 : 2;
-    CARDS[c.slug] = c; BY_NAME[norm(c.name)] = c; ORDER.push(c.slug);
+              lgroup: d.lgroup || "", shared: d.shared === "1", el: el };
+    c.limit = (c.token || c.shared) ? 0 : c.basic ? Infinity : c.legendary ? 1 : 2;
+    CARDS[c.slug] = c; BY_NAME[norm(c.name)] = c; if (!c.shared) ORDER.push(c.slug);
   });
 
   // ---------- state ----------
@@ -38,10 +39,10 @@
     clean();
   }
   function save() { try { localStorage.setItem(KEY, JSON.stringify(deck)); } catch (e) {} }
-  function clean() { Object.keys(deck.cards).forEach(function (s) { if (!CARDS[s] || !(deck.cards[s] > 0)) delete deck.cards[s]; }); }
+  function clean() { Object.keys(deck.cards).forEach(function (s) { if (!CARDS[s] || CARDS[s].shared || !(deck.cards[s] > 0)) delete deck.cards[s]; }); }
   function total() { return Object.keys(deck.cards).reduce(function (n, s) { return n + deck.cards[s]; }, 0); }
   function setCount(slug, n) {
-    if (!CARDS[slug]) return;
+    if (!CARDS[slug] || CARDS[slug].shared) return;
     n = Math.max(0, Math.min(n, 999));
     if (n) deck.cards[slug] = n; else delete deck.cards[slug];
     save(); render();
@@ -51,7 +52,7 @@
   // ---------- tile controls ----------
   ORDER.forEach(function (slug) {
     var c = CARDS[slug], cap_ = c.el.querySelector("figcaption");
-    var lim = c.token ? "token" : c.basic ? "no limit" : c.legendary ? "max 1" : "max 2";
+    var lim = c.shared ? "shared deck" : c.token ? "token" : c.basic ? "no limit" : c.legendary ? "max 1" : "max 2";
     var ctl = document.createElement("div");
     ctl.className = "deck-ctl";
     ctl.innerHTML = '<button type="button" class="dc-btn dc-minus" aria-label="Remove one ' + esc(c.name) + ' from deck">&minus;</button>' +
@@ -72,7 +73,8 @@
     var out = [], groups = {};
     Object.keys(deck.cards).forEach(function (s) {
       var c = CARDS[s], n = deck.cards[s];
-      if (c.token) out.push({ slug: s, msg: esc(c.name) + " is a token. Tokens are not put in the deck." });
+      if (c.shared) out.push({ slug: s, msg: esc(c.name) + " belongs to the shared Battlefield deck, not a player deck." });
+      else if (c.token) out.push({ slug: s, msg: esc(c.name) + " is a token. Tokens are not put in the deck." });
       else if (n > c.limit) out.push({ slug: s, msg: n + "× " + esc(c.name) + ": limit " + c.limit + (c.legendary ? " (Legendary)" : "") + "." });
       if (c.lgroup) groups[c.lgroup] = (groups[c.lgroup] || 0) + n;
     });
