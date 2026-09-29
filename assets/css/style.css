@@ -475,3 +475,10 @@ body:has(.deck-dock){padding-bottom:64px}
 .dl-group ul{list-style:none; margin:0; padding:0} .dl-group li{margin:.1rem 0; line-height:1.35}
 .dl-group .qty{display:inline-block; min-width:1.5em; font-family:var(--font-display); font-weight:700; color:var(--crimson-bright)}
 .dl-group .mv{font-size:.8rem}
+
+
+/* Mahjong cards: portrait tiles stay uncropped on their dedicated page. */
+.mahjong-grid .card-btn img{aspect-ratio:750/1050; object-fit:contain; background:#000}
+.mahjong-overview{max-width:900px; margin:1.5rem auto 3rem; background:var(--iron-800); border:1px solid var(--iron-600); border-radius:var(--radius); overflow:hidden}
+.mahjong-overview img{width:100%; height:auto}
+.mahjong-overview figcaption{padding:.65rem .9rem; color:var(--muted); font-size:.93rem; text-align:center}
